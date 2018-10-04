@@ -1,2 +1,2 @@
-# longladderinc2
-Long Ladder Web page update
+# longladderinc
+Long Ladder Web page 
