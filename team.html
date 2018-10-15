@@ -1,110 +1,149 @@
-<!DOCTYPE html>
-
-<!--Pseudo Code
-
-
-
-
--->
 <html>
 
 <head>
-    <title>Powerful Long Ladder Home Page</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../parallax.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/team_style.css">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+            .container {
+              position: relative;
+              width: 50%;
+            }
+            
+            .image {
+              display: block;
+              width: 350px;
+              height: 350px;
+            }
+            
+            .overlay {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 350px;
+              width: 350px;
+              opacity: 0;
+              transition: .5s ease;
+              background-color:red;
+            }
+            
+            .container:hover .overlay {
+              opacity: 1;
+            }
+            
+            .text {
+              color: white;
+              font-size: 20px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              text-align: center;
+            }
+            </style>
+
+
 </head>
-<body></body>
 
-<div id="fh5co-page">
-    <header id="fh5co-header" role="banner">
-        <div class="container">
-            <div class="header-inner">
-                <h1>
-                    <a href="index.html">T.J. Kennedy Jr</a>
-                </h1>
-                <nav role="navigation">
-                    <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/darkzero-omega2003">Github</a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/in/terrance-j-kennedy-jr-382244141/">Linkdin</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                        <!--<li class="cta"><a href="#">Get started</a></li>-->
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <body>
-
-
-    <div class="col-md-4 fh5co-staff text-center animate-box">
-        <img src="images/Spivey_2.jpg" alt="Spivey_Blue_Suit" class="img-responsive">
-        <h3>Terrence Spivey</h3>
-        <h4>Founder, CEO</h4>
-        <p>Hi! My name is T.J. Kennedy Jr. and I'm a fledgling coder from Cleveland, OH. I've been interested in web
-            design and
-            coding for a while and wanted to do something where I can flex my creative muscles, make some great art and
-            make people
-            happy in the process!!</p>
-        <ul class="fh5co-social">
-            <!--<li><a href="#"><i class="icon-google"></i></a></li>
-            <li><a href="#"><i class="icon-dribbble"></i></a></li>-->
-            <li>
-                <a href="https://twitter.com/TJKennedyJr">
-                    <i class="icon-twitter"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://facebook.com/TJKennedyJrWebDesign">
-                    <i class="icon-facebook"></i>
-                </a>
-            </li>
-            <!--<li><a href="#"><i class="icon-instagram"></i></a></li>-->
-        </ul>
+<header>
+    <img class="logo" src="assets/images/PPL_logoP.png" alt="Powerful Long Ladder Red and Black" width="50px" height="50px" />
+    <h2 class="powerful">Powerful Long Ladder</h2>
+    <div class="menu">
+        <p class="right"><a href="index.html">Home</a></p>
+        <div class="v1"></div>
+        <p class="right"><a href="events.html">Events</a></p>
+        <div class="v2"></div>
+        <p class="right"><a href="contacts.html">Contact</a></p>
     </div>
-    <div class="col-md-4 fh5co-staff text-center animate-box">
-        <img src="images/Foxx_2.jpg" alt="Foxx_Soul_Sistah" class="img-responsive">
-        <h3>Sharron McPherson Foxx</h3>
-        <h4>Co-Founder, CTO</h4>
-        <p>Sharron McPherson Foxx Powerful Long Ladder Executive Administrative and Production Assistant has worked in
-            many capacities either as Director, dancer, singer, choreographer at Karamu Theater, Chagrin Valley Little
-            Theater, Near West Theater, Dobama, Lakeland Community College, East Cleveland Theater. Career highlights
-            includes, playing the iconic role of "Benetha Younger" in "A Raisin in the Sun", directing "The Lynching of
-            Effie Childs" by Gwen Wright, receiving a Karamu Acting Award winner for the production of "Constant Star",
-            directing August Wilson's, "Joe Turners Come and Gone", working as lighting and sound operator for Powerful
-            Long Ladder's award winning production "Lady Day at Emerson Bar and Grille" and founding a women's theater
-            group, Maiden Voyage Theatre Ensemble in 2013, which specializes in the production of theatre by and for
-            women. She is currently Artist is Resident with CSU Black Studies Department, working along with Prester
-            Picket in the Howard A. Mims, Cultural Center. Sharron has worked with and taken workshops with some
-            notable names in theatre, such as Margaret Ford Taylor, Dance Workshops with Chuck Davis, Urban Bush Women,
-            Sabitino and Barbara Verlezzo and Bill T. Jones. She was a dancer with DuffyLit Ensemble here in Cleveland
-            and very honored to be mentored by Dance Legend Marjorie Witt Johnson. Sharron works as assistant vocal
-            coach and costumer with Cleveland's "Showagon" performing arts troupe. She's a singer with Afterthought and
-            the NuSoul band, as well as "Wish You Were Here" the acclaimed Pink Floyd Tribute Band, and has been an
-            Arts Educator for over 10 years. Sharron is proud to work with Terrence Spivey and share the exciting,
-            innovative mission and creative vision of Powerful Long Ladder Ensemble.
-        </p>
-        <div class="parallax" data-parallax="scroll" data-image-src="../amen_corner/_D5D1968.jpg"></div>
-        <ul class="fh5co-social">
-            <!--<li><a href="#"><i class="icon-google"></i></a></li>
-            <li><a href="#"><i class="icon-dribbble"></i></a></li>-->
-            <li>
-                <a href="https://twitter.com/brandon3plett">
-                    <i class="icon-twitter"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://facebook.com/TJKennedyJrWebDesign">
-                    <i class="icon-facebook"></i>
-                </a>
-            </li>
-        </body>
+</header>
+
+<body>
+    <h1 class="aboutme">Meet The Team</h1>
+
+    <div class="team">
+
+
+            <div class="container">
+                    <img src="assets/images/Spivey/Spivey2.jpg" alt="Avatar" class="image" width="350px" height="350px">
+                    <div class="overlay">
+                      <div class="text">Director and Founder</div>
+                    </div>
+                  </div>
+                  
+        <p class="para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Integer quis auctor elit sed vulputate. Vestibulum lorem sed risus ultricies
+            tristique
+            nulla aliquet enim.<br> Nunc sed velit dignissim sodales ut eu sem. Semper quis lectus nulla at volutpat
+            diam.
+            Integer feugiat scelerisque varius morbi enim nunc faucibus a. Vel fringilla est ullamcorper eget.
+            Magnis
+            dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Sagittis purus sit amet volutpat
+            consequat. Est sit amet facilisis magna etiam tempor. Blandit cursus risus at ultrices mi.</p>
+
+    </div>
+    <div class="team">
+            <div class="container">
+                    <img src="assets/images/Foxx/Foxx_4.jpg" alt="Avatar" class="image" width="350px" height="350px">
+                    <div class="overlay">
+                      <div class="text">Co-Director</div>
+                    </div>
+                  </div>
+            <p class="para">Sharron McPherson Foxx Powerful Long Ladder Executive Administrative and Production
+                Assistant has worked in many capacities either as Director, dancer, singer, choreographer at Karamu
+                Theater, Chagrin Valley Little Theater, Near West Theater, Dobama, Lakeland Community College, East
+                Cleveland Theater. Career highlights includes, playing the iconic role of "Benetha Younger" in "A
+                Raisin in the Sun", directing "The Lynching of Effie Childs" by Gwen Wright, receiving a Karamu Acting
+                Award winner for the production of "Constant Star", directing August Wilson's, "Joe Turners Come and
+                Gone", working as lighting and sound operator for Powerful Long Ladder's award winning production "Lady
+                Day at Emerson Bar and Grille" and founding a women's theater group, Maiden Voyage Theatre Ensemble in
+                2013, which specializes in the production of theatre by and for women. She is currently Artist is
+                Resident with CSU Black Studies Department, working along with Prester Picket in the Howard A. Mims,
+                Cultural Center. Sharron has worked with and taken workshops with some notable names in theatre, such
+                as Margaret Ford Taylor, Dance Workshops with Chuck Davis, Urban Bush Women, Sabitino and Barbara
+                Verlezzo and Bill T. Jones. She was a dancer with DuffyLit Ensemble here in Cleveland and very honored
+                to be mentored by Dance Legend Marjorie Witt Johnson. Sharron works as assistant vocal coach and
+                costumer with Cleveland's "Showagon" performing arts troupe. She's a singer with Afterthought and the
+                NuSoul band, as well as "Wish You Were Here" the acclaimed Pink Floyd Tribute Band, and has been an
+                Arts Educator for over 10 years. Sharron is proud to work with Terrence Spivey and share the exciting,
+                innovative mission and creative vision of Powerful Long Ladder Ensemble.</p>
+
+    </div>
+
+    <div class="sidebar">
+
+        <!--<h3>Connect with Me</h3>
+
+        <div class="sidebarline"></div>
+
+        <br>
+        <br>
+        <br>
+
+        <a href="https://darkzero-omega2003.github.io/Basic-Portfolio"/><img class="icons github" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrQOdH7TgvF6C3M-u8ls42YIJlx2Uf248x6FCTSEsSN_WjKbnX"/></a>
+        
+        <a href="https://www.linkedin.com/in/terrance-j-kennedy-jr-382244141/"><img class="icons linkdin" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIYZOYWxXJG1KQZR2ZrcaBii7QOfynSkRnatr5OU4zBsOIkeSvwg"/></a>
+
+        <a href="https://stackoverflow.com/users/9258837/brandon?tab=profile"><img class="icons slack" src="http://iosicongallery.com/img/1024/slack-2014-10-07.png"/></a>
+
+    </div>-->
+
+
+
+
+
+</body>
+
+
+<footer>
+
+    &copy Copyright 2018 Long Ladder Inc. Site by T.J. Kennedy Jr. FullStack Web Development
+
+</footer>
+
+
+</html>
