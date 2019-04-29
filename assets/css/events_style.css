@@ -3,10 +3,12 @@
     margin: 0;
 }
 
-body {
-    background-image: url("../images/_D5D1938.jpg");
-}
 
+
+.dzo_logo {
+    width: 25px;
+    height: 25px;
+}
 
 
 footer {
@@ -88,22 +90,20 @@ header {
 
 
 .powerful {
-    display: inline;
     text-align: center;
     float: left;
     margin-left: 200px;
     margin-top: 25px;
     color: #000000;
 }
-
 .logo {
-    display: inline;
     text-align: center;
     float: left;
-    margin-left: 200px;
+    margin-left: 10px;
     margin-top: 15px;
+    width: 50px;
+    height: 50px;
 }
-
 
 
 
@@ -158,4 +158,73 @@ button {
     height: 30px;
     border: solid 1px #4aaaa5;
     border-radius: 8px;
+}
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8, sans-serif;
+    color: #777;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("../images/_D5D2050.JPG");
+    min-height: 50%;
+}
+
+.bgimg-2 {
+    background-image: url("../images/_D5D2191.JPG");
+    min-height: 50%;
+
+}
+
+.bgimg-3 {
+    background-image: url("../images/_D5D1932.JPG");
+    min-height: 50%;
+
+}
+
+.bgimg-4 {
+    background-image: url("../images/D5D2083.JPG");
+    min-height: 50%;
+
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+
+.h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px, sans-serif;
+    color: #111;
+}
+
+/*Turn off parallax scrolling for tablets and phones*/
+@media only screen and (max-device-width:1024px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4 {
+        background-attachment: scroll;
+    }
 }

@@ -5,8 +5,15 @@
 
 body {
     background-image: url("../images/_D5D1938.jpg");
+    width: 100%;
+    height: 100%;
+
 }
 
+.dzo_logo {
+    width: 25px;
+    height: 25px;
+}
 
 
 footer {
@@ -87,7 +94,6 @@ header {
 
 
 .powerful {
-    display: inline;
     text-align: center;
     float: left;
     margin-left: 200px;
@@ -96,11 +102,12 @@ header {
 }
 
 .logo {
-    display: inline;
     text-align: center;
     float: left;
-    margin-left: 200px;
+    margin-left: 10px;
     margin-top: 15px;
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -114,7 +121,10 @@ header {
 
 .biopic {
 
-    align: center;
+   /*align: center;*/
+    width: 310px;
+    height: 310px;
+
 }
 
 .overlay {
@@ -123,8 +133,8 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
-    width: 100%;
+    height: 310px;
+    width: 310px;
     opacity: 0;
     transition: .5s ease;
     background-color: #008CBA;
@@ -132,6 +142,9 @@ header {
 
 .container:hover .overlay {
     opacity: 1;
+    height: 310px;
+    width: 310px;
+
 }
 
 .text {
@@ -144,4 +157,18 @@ header {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    .container {
+        font-size: 25px;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    .container {
+        font-size: 30px;
+    }
 }
