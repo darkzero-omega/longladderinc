@@ -3,96 +3,57 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="assets/css/index_style.css" />
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
-    <!--<style>
-        body,
-        html {
-            height: 100%;
-            margin: 0;
-            font: 400 15px/1.8, sans-serif;
-            color: #777;
-        }
+    <title>Powerful Long Ladder Enseble Home Page</title>
+    <!-- BootStrap Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Css Link -->
+    <link rel="stylesheet" href="assets/css/index_style.css">
+    <!--Fav Icon Link-->
+    <link rel="shortcut icon" type="image/png" href="../images/fav_icon.png">
+    <!--Jquery JS Scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
 
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
-            position: relative;
-            opacity: 0.65;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-
-        .bgimg-1 {
-            background-image: url("assets/images/_D5D2050.jpg");
-            min-height: 50%;
-        }
-
-        .bgimg-2 {
-            background-image: url("assets/images/_D5D2191.jpg");
-            min-height: 400px;
-
-        }
-
-        .bgimg-3 {
-            background-image: url("assets/images/_D5D1932v2.png");
-            min-height: 400px;
-
-        }
-
-        .bgimg-4 {
-            background-image: url("assets/images/_D5D2083.jpg");
-            min-height: 400px;
-
-        }
-
-        .caption span.border {
-            background-color: #111;
-            color: #fff;
-            padding: 18px;
-            font-size: 25px;
-            letter-spacing: 10px;
-        }
-
-
-        .h3 {
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            font: 20px, sans-serif;
-            color: #111;
-        }
-
-        /*Turn off parallax scrolling for tablets and phones*/
-        @media only screen and (max-device-width:1024px) {
-
-            .bgimg-1,
-            .bgimg-2,
-            .bgimg-3 {
-                background-attachment: scroll;
-            }
-        }
-    </style>-->
 </head>
 <header>
-    <img class="logo" src="assets/images/PPL_logoP.png" alt="Powerful Long Ladder Red and Black"  />
-    <h2 class="powerful">Powerful Long Ladder</h2>
-    <div class="menu">
-        <p class="right"><a href="team.html">Team</a></p>
-        <div class="v1"></div>
-        <p class="right"><a href="events.html">Events</a></p>
-        <div class="v2"></div>
-        <p class="right"><a href="contacts.html">Contact</a></p>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/PPL_logoP.png" width="50" height="50"
+                class="d-inline-block align-top" alt="GameChangers Logo"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="text-primary">
+            <div class="navbar-nav">
+              
+                <!--<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>-->
+                <a class="nav-item nav-link" id="links" href="team.html">Team</a>
+                <a class="nav-item nav-link" href="contact.html">Contact Us</a>
+                <!--<a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+            </div>
+            </div>
+        </div>
+    </nav>
 </header>
 
 <body>
     <div class="bgimg-1">
-        <div class="caption">
-            <span class="border">Hello World</span>
-        </div>
+        <!--<div class="caption">
+            <span class="border">Welcome</span>
+        </div>-->
     </div>
     <div style="color: black;background-color:red;text-align:center;padding: 50px 80px;text-align:justify;">
         <h3 style="text-align:center;"></h3>
@@ -119,7 +80,7 @@
     </div>
     <div class="bgimg-2">
         <div class="caption">
-            <span class="border" style="font-size:25px; color: #f7f7f7;">Part 1</span>
+            <span class="border" style="font-size:25px; color: #f7f7f7;">PART 1</span>
         </div>
     </div>
     <div style="position:relative;">
@@ -161,7 +122,8 @@
         </div>
     </div>
     <div style="position:relative;">
-        <div style="color: black;background-color:red;text-align:center;padding: 50px 80px; border:solid 1.5 #000000; text-align:justify;">
+        <div
+            style="color: black;background-color:red;text-align:center;padding: 50px 80px; border:solid 1.5 #000000; text-align:justify;">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Integer quis auctor elit sed vulputate. Vestibulum lorem sed risus ultricies
                 tristique
@@ -194,10 +156,11 @@
         </div>
     </div>
     <div class="bgimg-4">
-            <div class="caption">
-                <span class="border" style="background-color:transport; font-size:25px; color: #f7f7f7;">Another part</span>
-            </div>
+        <div class="caption">
+            <span class="border" style="font-size:25px; color: #f7f7f7;">Another Part</span>
         </div>
+    </div>
+
 </body>
 <footer>
     <p> &copy Copyright 2018 Long Ladder Inc.

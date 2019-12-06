@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+
 .dzo_logo {
     width: 25px;
     height: 25px;
@@ -14,14 +15,14 @@
 footer {
     background: #e60000;
     width: 100%;
-    height: 35px;
+    height: 70px;
     border-top: solid 1.5px #000000;
     clear: both;
     text-align: center;
     color: #000000;
     border-bottom-color: #000000;
     font-size: 20px;
-    padding-top: 10px;
+    padding: 15px;
 }
 
 header {
@@ -31,61 +32,6 @@ header {
     height: 75px;
 }
 
-/*menu bar start*/
-.menu {
-    float: right;
-    margin-right: 220px;
-    word-spacing: 25px;
-    margin-top: 30px;
-    font-weight: bold;
-
-}
-
-.right {
-    display: inline;
-}
-
-.right>a {
-    position: relative;
-    color: #000000;
-    text-decoration: none;
-}
-
-.right>a:hover {
-    color: rgb(0, 255, 242);
-}
-
-.right>a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(0, 255, 242);
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.right>a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-.v1,
-.v2 {
-    position: relative;
-    border-left: solid 1px #000000;
-    display: inline;
-    word-spacing: 25px;
-    right: 15px;
-}
-
-/*menu bar end*/
 
 
 .powerful {
@@ -115,13 +61,16 @@ body,
 html {
     height: 100%;
     margin: 0;
-    font: 400 15px/1.8, sans-serif;
+    font-family: 'Bebas Neue', cursive;
     color: #777;
+    font-size: 20px;
 }
 
 .bgimg-1,
 .bgimg-2,
-.bgimg-3 {
+.bgimg-3,
+.bgimg-4
+ {
     position: relative;
     opacity: 0.65;
     background-attachment: fixed;
@@ -143,13 +92,13 @@ html {
 }
 
 .bgimg-3 {
-    background-image: url("../images/_D5D1932.JPG");
+    background-image: url("../images/_D5D1932_grey.jpg");
     min-height: 50%;
 
 }
 
 .bgimg-4 {
-    background-image: url("../images/D5D2083.JPG");
+    background-image: url("../images/_D5D2226.JPG");
     min-height: 50%;
 
 }
@@ -157,9 +106,10 @@ html {
 .caption span.border {
     background-color: #111;
     color: #fff;
-    padding: 18px;
+    padding: 15px;
     font-size: 25px;
     letter-spacing: 10px;
+    border: #000000;
 }
 
 
@@ -171,6 +121,8 @@ html {
 }
 
 /*Turn off parallax scrolling for tablets and phones*/
+
+/*Turn off parallax scrolling for tablets and phones*/
 @media only screen and (max-device-width:1024px) {
 
     .bgimg-1,
@@ -180,3 +132,76 @@ html {
         background-attachment: scroll;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*menu css from previous version*/
+
+
+/*menu bar start
+.menu {
+    float: right;
+    margin-right: 220px;
+    word-spacing: 25px;
+    margin-top: 30px;
+    font-weight: bold;
+
+}
+
+.right {
+    display: inline;
+}
+
+.right>a {
+    position: relative;
+    color: #000000;
+    text-decoration: none;
+}
+
+.right>a:hover {
+    color: rgb(24, 194, 186);
+}
+
+.right>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(24, 194, 186);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.right>a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.v1,
+.v2 {
+    position: relative;
+    border-left: solid 1px #000000;
+    display: inline;
+    word-spacing: 25px;
+    right: 15px;
+}
+*/
+/*menu bar end*/
+

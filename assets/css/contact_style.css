@@ -4,7 +4,11 @@
   }
 
   body{
-    background-image: url("assets/images/_D5D1938.jpg");
+    background-image: url("../images/_D5D1938.jpg");
+    background-size: cover;
+    font-family: 'Bebas Neue', cursive;
+
+
    
     
     
@@ -22,7 +26,7 @@
     text-align: center;
     color: #000000;
     border-bottom-color: #000000;
-    font-size: 20px;
+    font-size: 25px;
     padding-top: 10px;
 }
 
@@ -33,15 +37,13 @@ header {
     height: 75px;
 }
 
-/*menu bar start*/
-.menu {
-    float: right;
-    margin-right: 220px;
-    word-spacing: 25px;
-    margin-top: 30px;
-    font-weight: bold;
 
-}
+
+.nav > li > a:hover{
+    background-color:rgb(99, 247, 222);
+  }
+  
+  
 
 .right {
     display: inline;

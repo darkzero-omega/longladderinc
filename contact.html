@@ -5,27 +5,47 @@
     <link rel="stylesheet" type="text/css" href="assets/css/contact_style.css">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body{
-        background-image: url("assets/images/_D5D1938.jpg");
-        position: relative;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="assets/css/index_style.css" />
+    <!--Icon-->
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+     <!-- BootStrap Link -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <!--Google Font-->
+ <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+ <!-- Css Link -->
+ <link rel="stylesheet" href="assets/css/index_style.css">
+ <!--Fav Icon Link-->
+ <link rel="shortcut icon" type="image/png" href="../images/fav_icon.png">
+ <!--Jquery JS Scripts-->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+     </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+     </script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+     </script>
+
 </head>
 <header>
-    <img class="logo" src="assets/images/PPL_logoP.png" alt="Powerful Long Ladder Red and Black" width="50px" height="50px" />
-    <h2 class="powerful">Powerful Long Ladder</h2>
-    <div class="menu">
-        <p class="right"><a href="index.html">Home</a></p>
-        <div class="v1"></div>
-        <p class="right"><a href="events.html">Events</a></p>
-        <div class="v2"></div>
-        <p class="right"><a href="team.html">Team</a></p>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/PPL_logoP.png" width="50" height="50"
+                class="d-inline-block align-top" alt="PPL Logo"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" id="links" href="team.html">Team</a>
+                <a class="nav-item nav-link" href="contact.html">Contact Us</a>
+                <!--<a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+            </div>
+        </div>
 </header>
 
 <body>
@@ -53,7 +73,9 @@
     </div>
 </body>
 <footer>
-    &copy Copyright 2018 Long Ladder Inc. Site by T.J. Kennedy Jr. FullStack Web Development
+    <p> &copy Copyright 2018 Long Ladder Inc.
+        Made by DarkZero_Omega Coding<img src="assets/images/darkzero_omega_logo_v1.png" class="dzo_logo"
+            alt="darkzero_omega coding logo">
 </footer>
 
 </html>
