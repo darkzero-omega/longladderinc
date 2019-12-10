@@ -4,9 +4,10 @@
 }
 
 body {
-    background-image: url("../images/_D5D1938.jpg");
-    width: 100%;
-    height: 100%;
+    background-image: url("../images/_D5D2070.jpg");
+    background-size: cover;
+    font-family: 'Bebas Neue', cursive;
+
 
 }
 
@@ -16,17 +17,18 @@ body {
 }
 
 
-footer {
+#footer {
+    position: absolute;
+    bottom: 0;
     background: #e60000;
     width: 100%;
-    height: 35px;
+    height: auto;
     border-top: solid 1.5px #000000;
     clear: both;
     text-align: center;
     color: #000000;
     border-bottom-color: #000000;
-    font-size: 20px;
-    padding-top: 10px;
+    font-size: 25px;
 }
 
 header {
@@ -36,7 +38,95 @@ header {
     height: 75px;
 }
 
-/*menu bar start*/
+.powerful {
+    text-align: center;
+    float: left;
+    margin-left: 200px;
+    margin-top: 25px;
+    color: #000000;
+}
+
+.logo {
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/*meet the team*/
+.team {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.biopic {
+
+    /*align: center;*/
+    width: 15%;
+    height: 15%;
+
+
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15%;
+    width: 15%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+    height: 15%;
+    width: 15%;
+
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    .container {
+        font-size: 25px;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    .container {
+        font-size: 30px;
+    }
+}
+
+
+
+
+/*menu css from previous version*/
+
+
+/*menu bar start
 .menu {
     float: right;
     margin-right: 220px;
@@ -89,86 +179,5 @@ header {
     word-spacing: 25px;
     right: 15px;
 }
-
+*/
 /*menu bar end*/
-
-
-.powerful {
-    text-align: center;
-    float: left;
-    margin-left: 200px;
-    margin-top: 25px;
-    color: #000000;
-}
-
-.logo {
-    text-align: center;
-    float: left;
-    margin-left: 10px;
-    margin-top: 15px;
-    width: 50px;
-    height: 50px;
-}
-
-
-
-/*meet the team*/
-.team {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.biopic {
-
-   /*align: center;*/
-    width: 310px;
-    height: 310px;
-
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 310px;
-    width: 310px;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-}
-
-.container:hover .overlay {
-    opacity: 1;
-    height: 310px;
-    width: 310px;
-
-}
-
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-    .container {
-        font-size: 25px;
-    }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-    .container {
-        font-size: 30px;
-    }
-}
