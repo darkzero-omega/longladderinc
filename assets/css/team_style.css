@@ -7,8 +7,6 @@ body {
     background-image: url("../images/_D5D2070.jpg");
     background-size: cover;
     font-family: 'Bebas Neue', cursive;
-
-
 }
 
 .dzo_logo {
@@ -16,10 +14,7 @@ body {
     height: 25px;
 }
 
-
 #footer {
-    position: absolute;
-    bottom: 0;
     background: #e60000;
     width: 100%;
     height: auto;
@@ -28,14 +23,14 @@ body {
     text-align: center;
     color: #000000;
     border-bottom-color: #000000;
-    font-size: 25px;
+    font-size: 20px;
+    margin: px;
+    padding-bottom: 2px;
+    bottom: 0;
 }
 
-header {
-    background: #e60000;
-    border: solid 1.5px #000000;
-    width: 100%;
-    height: 75px;
+.aboutme {
+    color: #DAD4D5;
 }
 
 .powerful {
@@ -55,9 +50,14 @@ header {
     height: 50px;
 }
 
+.para {
+    color: #F3EDEE;
+    font-size: 25px;
+}
 
 
 /*meet the team*/
+
 .team {
     display: block;
     width: 100%;
@@ -65,62 +65,73 @@ header {
 }
 
 .biopic {
-
     /*align: center;*/
     width: 15%;
     height: 15%;
-
-
-
 }
 
-.overlay {
+.h1 {
+    color: #DAD4D5;
+    ;
+}
+
+#links {
+    color: red;
+    font-size: 25px;
+}
+
+.splash {
+    /* Width and height of splash screen */
+    height: 100vh;
+    width: 100%;
+    /* Remove from document flow and allow <div> to float on top */
+    position: absolute;
+    z-index: -1;
+}
+
+.splash>.image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: fadeInOut 5s infinite;
+}
+
+.splash>.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.splash img {
     position: absolute;
     top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 15%;
-    width: 15%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
+    /* Cover the entire container */
+    object-fit: cover;
+    /* Note: Aspect ratio is preserved because height is auto by default */
+    width: 100%;
+    height: 0;
+    /* Swap out image; each gets 5s */
+    animation: imageSwap 50s infinite;
 }
 
-.container:hover .overlay {
-    opacity: 1;
-    height: 15%;
-    width: 15%;
-
-}
-
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+
 @media screen and (min-width: 601px) {
     .container {
         font-size: 25px;
     }
 }
 
+
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+
 @media screen and (max-width: 600px) {
     .container {
         font-size: 30px;
     }
 }
-
-
 
 
 /*menu css from previous version*/
@@ -180,4 +191,6 @@ header {
     right: 15px;
 }
 */
+
+
 /*menu bar end*/
