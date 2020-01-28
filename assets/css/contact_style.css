@@ -13,17 +13,18 @@ body {
     height: 25px;
 }
 
-footer {
+#footer {
     background: #e60000;
     width: 100%;
     height: auto;
+    text-align: center;
     border-top: solid 1.5px #000000;
     clear: both;
-    text-align: center;
     color: #000000;
     border-bottom-color: #000000;
     font-size: 20px;
-    padding: 15px;
+    margin-top: 500px;
+    padding-bottom: 2px;
     bottom: 0;
 }
 
