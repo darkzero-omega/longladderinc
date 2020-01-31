@@ -5,7 +5,6 @@
 
 body {
     font-family: 'Bebas Neue', cursive;
-    height: auto;
 }
 
 .dzo_logo {
@@ -23,7 +22,7 @@ body {
     color: #000000;
     border-bottom-color: #000000;
     font-size: 20px;
-    margin-top: 500px;
+    margin-top: -100px;
     padding-bottom: 2px;
     bottom: 0;
 }
@@ -64,17 +63,18 @@ body {
     color: #DAD4D5;
 }
 
-.contentline {
+
+/*.contentline {
     position: relative;
     width: 90%;
     border-top: solid 3px black;
     margin: auto;
     margin-bottom: 25px;
-}
+}*/
 
 .splash {
     /* Width and height of splash screen */
-    height: 100vh;
+    height: 100%;
     width: 100%;
     /* Remove from document flow and allow <div> to float on top */
     position: absolute;
@@ -102,7 +102,7 @@ body {
     object-fit: cover;
     /* Note: Aspect ratio is preserved because height is auto by default */
     width: 100%;
-    height: 0;
+    height: 100%;
     /* Swap out image; each gets 5s */
     animation: imageSwap 50s infinite;
 }
